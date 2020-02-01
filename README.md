@@ -1,14 +1,14 @@
-# microservicecloud
-微服务框架集成
+#微服务框架集成(microservicecloud)
 
-服务提供者：microservicecloud-provider-dept-8001端口：8001
+##工程说明
+* microservicecloud-api：基础工程
+* microservicecloud-provider-dept-8001：服务提供者
+* microservicecloud-provider-dept-8002：服务提供者(Ribbon负载测试)
+* microservicecloud-provider-dept-8003：服务提供者(Ribbon负载测试)
+* microservicecloud-eureka-7001：Eureka注册中心
+* microservicecloud-eureka-7002：Eureka注册中心(Eureka集群)
+* microservicecloud-eureka-7003:Eureka注册中心(Eureka集群)
+* microservicecloud-consumer-dept-80:服务消费者
 
-测试Ribbon负载均衡：microservicecloud-provider-dept-8002端口：8002，microservicecloud-provider-dept-8003端口：8003
-
-服务消费者：microservicecloud-consumer-dept-80端口：80
-
-Eureka注册中心：microservicecloud-eureka-7001端口：7001
-
-Eureka集群：microservicecloud-eureka-7002端口：7002，microservicecloud-eureka-7003端口：7003
-
-microservicecloud-consumer-dept-80中新增ribbon自定义，主启动类中注释了负载规则
+##功能点说明
+* microservicecloud-consumer-dept-80中新增ribbon自定义，主启动类中注释了负载规则
